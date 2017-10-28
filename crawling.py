@@ -33,5 +33,5 @@ def getNews():
 		aid = i['aid']
 		link = link_base % (oid, aid)
 		title = i['title']
-		records.append((title,link))
+		records.append((aid,title,link))
 	return records
