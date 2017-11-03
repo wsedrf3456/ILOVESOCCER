@@ -1,15 +1,11 @@
 import sqlite3
-import crawling
 
-def putData():
+def putData(records):
 	# DB 연결, SQL 구문 호출 위해 객체 생성
 	con = sqlite3.connect('soccer.db')
 	cur = con.cursor()
 
 	sql = 'insert into soccer values (?,?,?);'
-
-	# crawling 파일의 getNews 함수 호출
-	records = crawling.getNews()
 
 	try :
 		# 웹 페이지 data 들을 sql 형태에 맞게 넣기
@@ -23,3 +19,4 @@ def putData():
 
 	# DB 연결 닫기
 	con.close()
+	return records

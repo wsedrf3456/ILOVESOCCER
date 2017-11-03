@@ -3,6 +3,6 @@ import crawling
 import soccerdata
 
 while 1:
-	crawling.getNews()
-	soccerdata.putData()
-	time.sleep(300)
+	records = crawling.getNews()
+	soccerdata.putData(records)
+	time.sleep(30)
