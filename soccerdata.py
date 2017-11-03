@@ -23,4 +23,3 @@ def putData():
 
 	# DB 연결 닫기
 	con.close()
-	return records
