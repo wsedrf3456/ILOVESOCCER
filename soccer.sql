@@ -1,4 +1,4 @@
 create table soccer (
-	id integer primary key autoincrement,
+	id integer primary key,
 	title text,
 	link text); 
