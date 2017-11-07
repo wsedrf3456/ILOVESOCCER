@@ -5,4 +5,4 @@ import soccerdata
 while 1:
 	records = crawling.getNews()
 	soccerdata.putData(records)
-	time.sleep(30)
+	time.sleep(300)
